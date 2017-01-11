@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/signin.css"/>
+		<script src="../js/plugins/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/common-rem.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="box">
+			<img src="../images/img/f_03.png" class="logo"/>
+			<form action="" method="post" id="form">
+				<div class="input clear">
+					<div class="left fl">
+						<img src="../images/img/f_07.jpg" class="img1 " />
+					</div>
+					<input type="text" placeholder="账号" name="" id="photo" value="" class="fl" />
+				</div>
+				<div class="input clear">
+					<div class="left fl">
+						<img src="../images/img/f_10.jpg" class="img2 " />
+					</div>
+					<input type="password" placeholder="密码" name="" id="password" value="" class="fl" />
+				</div>
+				<div class="inputt">
+					<input type="checkbox" name="classify" id="classify1" value=""/>
+					<label for="classify1">记住我的账号</label>
+				</div>
+				<input type="submit" value="登录" class="submit" />
+			</form>
+			<footer>Copyright © 2004-2016  XXXX 版权所有</footer>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#photo").blur(function(){
+					console.log(111);
+					var photo = $("#photo").val();
+					var re = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i;
+					if( photo=="" || photo==null ){
+						alert("手机号码不能为空！")
+					}else{
+						if(re.test(photo)){
+							
+						}else{
+							alert("手机号码格式错误！");
+						}
+					}
+				})
+				
+				$(".submit").click(function(){
+					var password = $("#password").val();
+					console.log(password);
+					if(password=='321654'){
+						$("#form").submit();
+					}else{
+						alert("密码或账号错误！");
+						return false;
+					}
+				})
+				
+				
+			})
+		</script>
+		
+		
+	</body>
+</html>

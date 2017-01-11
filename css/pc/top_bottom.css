@@ -1,0 +1,387 @@
+#all{
+	width: 100%;
+	background: #f7f7f7;
+}
+.topNav{
+	width: 100%;
+	height: auto;	
+}
+.topNavBody{
+	width: 100%;
+	height: 35px;
+	margin: auto;
+	background-color: #e8e8e8;
+}
+.navUl{
+	width: 1200px;
+	height: 35px;
+	line-height: 35px;
+	margin:auto;
+	font-size: 12px;
+	position: relative;
+}
+.navUl li select{
+	outline: none;
+    border: 1px solid #219d00;
+}
+
+.navUl .login p{
+	float: left;
+	padding-left: 11px;
+}
+.triangle{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: url(../../images/web/index/sprit4.png) no-repeat -32px -58px;
+	margin-left: 2px;
+}
+.upright{
+	display: inline-block;
+	width: 2px;
+	height: 12px;
+	background: url(../../images/web/index/sprit4.png) no-repeat -50px -143px;
+	padding-right: 5px;
+}
+.navUl .login{
+	position: absolute;
+	right: 0;
+}
+.navUl .address select,.navUl .address p{
+	float: left;
+}
+.plus{
+	width: 3px;
+	height: 3px;
+	background: url(../../images/web/index/sprit4.png) no-repeat -9px -60px;
+	margin:8px 7px 0 7px;
+}
+.address{
+	padding-top: 7px;
+}
+.dongdong{
+	cursor: pointer;
+	position: relative;
+}
+#login{
+	color: #e87e00;
+}
+#signup{
+	color: #000;
+}
+.mine{
+	width: 84px;
+	height: 46px;
+	background-color: #fff;
+	position: absolute;
+	display: inline-block;
+	font: 12px lighter;
+	display: none;
+	border: 1px solid #e8e8e8;
+	z-index: 10;
+	
+}
+.mine a{
+	display: inline-block;
+	margin: 6px 0 0 16px;
+	color: #000;
+}
+.dongdong:hover .mine{
+	display: block;
+}
+/*logo一行编辑*/
+.logo_mark{
+	width: 1200px;
+	height: 100px;
+	margin: auto;
+	border: 1px solid transparent;
+}
+#logo{
+	margin-top: 10px;
+}
+.logo_mark #logo,.mark .mark_second,#text_input,#submit{
+	float: left;
+}
+#text_input{
+	width: 524px;
+	height: 31px;
+	outline: none;
+	border: 1px solid #e8e8e8;
+	background:#fff url(../../images/web/index/sprit4.png) no-repeat 464px -87px;
+	text-indent: 8px;
+}
+#submit{
+	width: 74px;
+	height: 33px;
+	background-color: #129700;
+	outline: none;
+	border: none;
+	color: #fff;
+	font: 18px bolder;
+	margin-left: 4px;
+}
+.mark_second{
+	padding: 32px 0 0 360px;
+	position: relative;
+}
+.shop_cart{
+	width:140px;
+	height: 32px;
+	background: url(../../images/web/index/shopcart.png) no-repeat 0px 0px;
+	margin-left: 96px;
+	position: relative;
+	z-index: 9;
+}
+.shop_text{
+	position: absolute;
+	top: 20%;
+	left: 32%;
+	font-size: 14px;
+	color: #fff;
+}
+.hid_shop{
+	width: 348px;
+	height: auto;
+	border: 1px solid #e8e8e8;
+	position: absolute;
+	background-color: #fff;
+	right: 0;
+	top: 64px;
+	font-size: 12px;
+	z-index: 20;
+}
+#hid_content{
+	width: 340px;
+	height: auto;
+	display: inline-block;
+	margin-left: 4px;
+}
+#hid_content li{
+	width: 100%;
+}
+#hid_content .hidFir{	
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #cdcdcd;
+	text-indent: 8px;
+}
+#hid_content .hid_add{
+	height: 50px;
+	border-bottom: 1px dashed #cdcdcd;
+}
+#hid_bottom{
+	height: 72px;
+	width: 348px;
+	overflow: hidden;
+}
+/*购物车*/
+.shopping{
+	margin: 10px 0 0 5px;
+	position: relative;
+}
+.shopping dt,.shopping dd{
+	float: left;
+}
+.shopping dd{
+	margin-left: 6px;
+}
+.price span{
+	color: #0f7f00;
+}
+.delete{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #000;
+	width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.delete:hover{
+	background: #D33724;
+	color: #fff;
+}
+.hid_bottom_body{
+	width: 330px;
+	height: 66px;
+	margin:5px auto;
+}
+#number,#weight,#total_price{
+	color:#dc6b01;
+}
+.goods{
+	margin:0px 102px 0 6px;
+}
+.hid_bottom_body li p{
+	margin-bottom: 8px;
+}
+#pay{
+	width: 120px;
+	height: 36px;
+	border-radius: 4px;
+	background-color: #129700;
+	line-height: 36px;
+	text-align: center;
+}
+#pay a,.classify .good_whole a{
+	color: #fff;
+}
+.good_whole{
+	width: 240px;
+	border: 1px solid #0F7F00;
+}
+.good_whole p{
+	width: 237px;
+	height: 27px;
+	line-height: 27px;	
+	background-color: #0f7f00;
+	margin:1px 0 0 1px;
+	text-align: center;
+}
+.classifyFa{
+	width: 100%;
+	border-bottom: 1px solid #0F7F00;
+}
+.classify{
+	width: 1200px;
+	height: 30px;
+	margin: auto;
+	position: relative;
+}
+.classify li{
+	font-size: 18px;
+	margin-right: 29px;
+	height: 29px;
+	text-align: center;
+}
+.classify .business{
+	/*margin-left: 480px;*/
+	position: absolute;
+	right: 0; 	
+}
+.hot{
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	background: url(../../images/web/index/sprit3.png) no-repeat 0px 0px;
+	top: -10px;
+	right: -10px;
+}
+.classify li a{
+	color: #000;
+}
+
+/*----------头部样式结束，底部开始---------*/
+
+.bottom{
+	width: 1200px;
+	height: 350px;
+}
+.friendLink{
+	width: 1198px;
+	height: 32px;
+	border: 1px dotted #c9c9c9;
+	border-radius: 6px;
+	line-height: 30px;
+	text-indent: 12px;
+}
+.friendLink p a:hover{
+	color: #727272;
+}
+.peculiarities{
+	width: 1200px;
+	height: 120px;
+	border-bottom: 1px solid #c3c3c3;
+	overflow: hidden;
+}
+.peculiarity{
+	width: 228px;
+	height: 63px;
+	margin-top: 30px;
+	float: left;
+}
+.peculiarity1{
+	margin-left: 14px;
+}
+.peculiarity_logo{
+	width: 60px;
+	height: 60px;
+	border: 1px dotted #b8b8b8;
+	border-radius: 4px;
+}
+.peculiarity1_logo{
+	background: url(../../images/web/index/sprit4.png) no-repeat -162px 3px;		
+}
+.peculiarity2_logo{
+	background: url(../../images/web/index/sprit4.png) no-repeat -162px -74px;			
+}
+.peculiarity3_logo{	
+	background: url(../../images/web/index/sprit4.png) no-repeat -164px -141px;			
+}
+.peculiarity4_logo{
+	background: url(../../images/web/index/sprit4.png) no-repeat -160px -207px;		
+}
+
+.color666{
+	width: 164px;
+	text-align: center;
+	color: #666;
+	margin: -12px 0 0 -12px;
+}
+.peculiarity2,.peculiarity3,.peculiarity4{
+	margin-left:91px;
+}
+.bottomContent{
+	width: 1200px;
+	height: 150px;
+	margin-top: 15px;
+}
+.bottomContent1{
+	width: 314px;
+	height: 150px;
+}
+.circlrPoint{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #c5c5c5;
+}
+.customService,#logo2{
+	float: left;
+	margin: 8px 0 4px 0;
+}
+.customService p{
+	margin: 0 0 6px 6px;
+}
+
+.copyRight{
+	clear: both;
+	margin-top: 4px;
+}
+.bottomContent2{
+	height: 150px;
+}
+.bottom_content a:hover{
+	color: #A4A4A4;
+}
+.bottom_content p{
+	margin-top: 4px;
+}
+.marginBottom{
+	margin-bottom: 8px;
+}
+.bottom_content{
+	margin-left: 54px;
+}
+.bottomContent7{
+	width: 158px;
+	height: 150px;
+	text-align: center;
+	margin-left: 20px;
+}
+.erweima{
+	margin:4px 0 4px 0;
+}

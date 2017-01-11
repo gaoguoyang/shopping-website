@@ -1,0 +1,208 @@
+#all{
+	width: 100%;
+	background: #f7f7f7;
+}
+/*.classify .good_whole{
+    height: 28px;
+}
+.classify .good_whole p{
+    width: 238px;
+}*/
+.enroll_img{
+	float: left;
+	width: 534px;
+	height: 58px;
+	margin-top: 41px;
+	margin-left: 168px;
+}
+#body{
+	width: 1200px;
+	margin: auto;
+}
+.verify{
+	width: 1187px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #d6d6d6;
+	margin: auto;
+	line-height: 30px;
+	text-indent: 10px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.orderInfo{
+	width: 1186px;
+	height: 26px;
+	background: #e6e6e6;
+	margin: auto;
+	color: #a4a4a4;
+	line-height: 26px;
+	margin-top: 22px;
+}
+.order_info{
+	float: left;
+}
+.order_info1,.orderNumber{
+	width: 122px;
+	text-align: left;
+	margin-left: 30px;
+}
+.order_info2,.orderProduct{
+	width: 298px;
+	text-align: left;
+	margin-left: 48px;
+}
+.order_info3,.receiver{
+	width: 44px;
+	text-align: center;
+	margin-left: 33px;
+}
+.order_info4,.orderDate{
+	width: 78px;
+	text-align: center;
+	margin-left: 92px;
+}
+.order_info5,.payforPri{
+	width: 52px;
+	text-align: center;
+	margin-left: 47px;
+}
+.order_info6,.orderAddress{
+	width: 178px;
+	text-align: center;
+	margin-left: 84px;
+}
+.Orders{
+	width: 1186px;
+	margin: auto;
+	margin-bottom: 54px;
+}
+.order{
+	width: 1186px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px dashed #bfbfbf;
+}
+.orderGoodImg{
+	width: 44px;
+	height: 44px;
+	border: 1px solid #dbdbdb;
+}
+.orderGoodText{
+	width: 236px;
+	height: 40px;
+	line-height: 18px;
+	margin-top: 4px;
+	position: relative;
+}
+.orderGoodText,.orderGoodImg{
+	float: left;
+}
+.orderGoodPri{
+	position: absolute;
+	bottom: 4px;
+	right: 14px;
+}
+.orderProduct{
+	margin-top: 16px;
+}
+.payFor{
+	width: 1190px;
+	height: 266px;
+	margin:auto;
+	margin-bottom: 22px;
+	border-top: 2px solid #73b062;
+	background: #fff;
+	position: relative;
+}
+.payMethods{
+	width: 124px;
+	height: 30px;
+	background: #209300;
+	position: absolute;
+	top: -30px;
+	right: 0;
+	color: #fff;
+	line-height: 30px;
+	text-align:center;
+}
+.onlinePay{
+	width: 1165px;
+	height: 52px;
+	border: 2px solid #209300;
+	margin:16px auto;
+	line-height: 52px;
+}
+.onlinePay .payCheck,.onlinePay p{
+	float: left;
+}
+.payCheck{
+	margin:20px 8px 0 8px; 
+}
+.pay_for{
+	position: absolute;
+	right: 26px;
+}
+.otherMethods{
+	width: 1165px;
+	height: 36px;
+	margin:auto;
+	margin-top: 12px;
+}
+.otherMethod1,.otherMethod2{
+	width: 128px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+.otherMethod1{
+	border: 1px solid #e4e4e4;
+}
+.otherMethod2{
+	border: 1px dashed #aaaaaa;
+	margin-left: 12px;
+}
+.envirCheck{
+	width: 1165px;
+	height: 20px;
+	margin:auto;
+	margin-top: 44px;
+}
+.envirCheck img,.envirCheck p{
+	float: left;
+}
+#envirCheckResult{
+	margin-left: 6px;
+}
+.payment{
+	width: 1165px;
+	height: 42px;
+	margin:auto;
+	position: relative;
+	margin-top: 20px;
+}
+#payPassword{
+	width: 183px;
+	height: 40px;
+	outline: none;
+	border: 1px solid #e4e4e4;
+	text-align: center;
+	line-height: 40px;
+}
+.confirm_out{
+	width: 184px;
+	height: 40px;
+	background: #209300;
+	position: absolute;
+	right: 40px;
+	bottom: 0;
+}
+#confirm_pay{
+	width: 180px;
+	height: 36px;
+	border: 1px solid rgba(255,255,255,0.4);
+	margin:1px  0 0 1px;
+	color: #fff;
+	line-height: 36px;
+	text-align: center;
+}

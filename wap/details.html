@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/details.css"/>
+		<script src="../js/plugins/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/common-rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="javascript:history.go(-1);">
+				<img src="../images/details/b_03.jpg"/>
+			</a>
+			<span>蔬菜详情页</span>
+		</header>
+		<!--头部结束-->
+		
+		<div class="banner swiper-container">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide" style="background-image: url(../images/details/bb_06.jpg);"></div>
+		        <div class="swiper-slide" style="background-image: url(../images/details/bb_06.jpg);"></div>
+		        <div class="swiper-slide" style="background-image: url(../images/details/bb_06.jpg);"></div>
+		    </div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--<div class="message clear">
+			<div class="left fl">
+				<div class="name">SHENGCAI生菜（大力、叶用莴苣、鹅仔菜、莴仔菜、唛仔菜）</div>
+				<div class="describe">为一年生或二年生草本作物，叶长倒卵形，密集成甘蓝状叶球，可生食密集成甘蓝状叶球，可生食</div>
+				<div class="price">￥<span class="change_size">35.2</span>元/斤</div>
+			</div>
+			<div class="right fl">加入购物车</div>
+		</div>-->
+		<div class="message">
+			<div class="name">SHENGCAI生菜<span>（大力、叶用莴苣、鹅仔菜、莴仔菜、唛仔菜）</span></div>
+			<div class="describe">为一年生或二年生草本作物，叶长倒卵形，密集成甘蓝状叶球，可生食密集成甘蓝状叶球，可生食</div>
+		</div>
+		<div class="message_two clear">
+			<div class="fl left">
+				<div class="price">
+					价格<span>￥20.00</span>
+				</div>
+				<div class="Sales">累计销量：已售<span>1000</span>件</div>
+			</div>
+			<div class="right fr">加入购物车</div>
+		</div>
+		<!--<a class="sell clear">
+			<span class="left fl">购买前请咨询客服人员</span>
+			<span class="right fr">[售后服务]</span>
+		</a>-->
+		
+		<div class="choice clear">
+			<div class="left1 fl">商户</div>
+			<img src="../images/details/b_09.jpg" alt="" class="left3 fl" />
+			<div class="left2 fl clear">
+				<span class="left2_1 fl">东东食材</span>
+				<span class="left2_2 fl">自营</span>
+			</div>
+			
+			<!--<img src="../images/details/b_12.jpg" alt="" class="right fr select_btn" />-->
+		</div>
+		<div class="one clear">
+			<div class="left1 fl">数量：</div>
+			<div class="left2 fl clear">
+				<div class="left2_1 subtract fl">-</div>
+				<div class="left2_2 num fl">1</div>
+				<div class="left2_3 add fr">+</div>
+			</div>
+			<div class="left3 fl">库存：</div>
+			<div class="left4 fl">有货</div>
+			<!--<div class="left5 fl">当地配送</div>
+			<div class="left6 fl">赠送20积分</div>
+			<div class="fl clear collect">
+				<div class="left7 fl">+</div>
+				<div class="left8 fl">收藏商品</div>
+			</div>-->
+				
+		</div>
+		<!--如果有地址跳向selectsite.html，如果没有地址跳向addsite.html-->
+		<!--<a href="selectsite.html" class="address clear">-->
+		<!--<a href="addsite.html" class="address clear">
+			<div class="left fl">
+				<div class="row clear">
+					<div class="col1 fl">送至</div>
+					<img src="../images/details/b_17.jpg" class="col2 fl">
+					<div class="col3 fl">海南省海口市海南省海口市海南省海口市海南省海口市海南省海口市海南省海口市</div>
+				</div>
+				<div class="row clear">
+					<div class="col1 fl">&nbsp;</div>
+					<div class="col2 fl">&nbsp;</div>
+					<div class="col3 fl" style="color: #D10000">现货</div>
+				</div>
+			</div>
+			
+			<img src="../images/details/b_12.jpg" alt="" class="right fr" />
+		</a>-->
+		<div class="distribution">
+			配送：<span class="location">
+					<select id="select1" name="">
+						<option value="">三亚市</option>
+						<option value="">海口市</option>
+						<option value="">三沙市</option>
+						<option value="">儋州市</option>
+						<!--<option value="">省直辖县级行政单位</option>-->
+						
+					</select>
+					<label for="select1" class="img">
+						<img src="../images/details/arrows_03.png" alt="" style="display: inline;"/>
+					</label>
+					
+				</span>&nbsp;&nbsp;至&nbsp;&nbsp;<span class="location">
+					<select id="select2" name="">
+						<option value="">三亚市</option>
+						<option value="">海口市</option>
+						<option value="">三沙市</option>
+						<option value="">儋州市</option>
+						<!--<option value="">省直辖县级行政单位</option>-->
+						
+					</select>
+					<label for="select2" class="img">
+						<img src="../images/details/arrows_03.png" alt="" style="display: inline;"/>
+					</label>
+				</span><span class="Local_distribution">当地配送</span><span class="give">赠送20积分</span>
+		</div>
+		
+		
+		<div class="pay_way">
+			支付方式&nbsp;&nbsp;<span><a href="signin.html">登录</a>查看是否享有<a href="">会员</a>权限优惠</span>
+			<div class="img">
+				<img src="../images/details/pay_03.jpg"/>
+				<img src="../images/details/pay_05.jpg"/>
+				<img src="../images/details/pay_07.jpg"/>
+				<img src="../images/details/pay_09.jpg"/>
+			</div>
+		</div>
+	
+		<img src="../images/details/b_20.jpg" class="com_det_title" />
+		<div class="commodity_details">
+			<img src="../images/details/bb_03.jpg" />
+			<img src="../images/details/bb_06.jpg" />
+			<img src="../images/details/bb_10.jpg" />
+			<div class="bottom_txt">
+				<img src="../images/details/detail_03.jpg" class="title" />
+				<div class="Service_Promise">
+					<h3>服务承诺</h3>
+					<p>XX平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！</p>
+					<p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！ </p>
+				</div>
+				<div class="Right_to_declare">
+					<h3>权利声明</h3>
+					<p>XX上的所有商品信息、商品咨询等内容，是XX重要的经营资源，未经许可，禁止非法转载使用。</p>
+					<p>注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+				</div>
+				<div class="The_price_that">
+					<h3>价格说明</h3>
+					<p>商城价：商城价为商品的销售价，是您最终决定是否购买商品的依据。划线价：商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</p>
+					<p>折扣：如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</p>
+					<p>异常问题：商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。</p>
+				</div>
+			</div>
+		</div>
+		<!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box">
+            <div class="header">
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </div>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"></ul>
+            </article>
+        </section>
+        <!--遮罩层-->
+        <div id="areaMask" class="mask"></div>
+			
+	
+		<!--半透明，商户选择-->
+		<div class="translucence">
+			<div class="select_com">
+				<div class="select_title">商户选择</div>
+				<form action="" method="post" id="form">
+					<div class="select_content">
+						<!--js中用到这一组name值，如果必须要改name值，通知前端改js-->
+						<div class="select_inner">
+							<input type="radio" name="select" id="select_one" value=""/>
+							<label for="select_one">
+								
+								<div class="name fl">阿兰蔬菜商户阿兰蔬菜商户</div>
+								
+								<div class="evaluate clear fr">
+									<div class="fl">好评（0）</div>
+									<div class="fl">中评（0）</div>
+									<div class="fl">差评（0）</div>
+								</div>
+								<div class="price fr">28元/KG</div>
+							</label>
+							
+						</div>
+						<div class="select_inner">
+							<input type="radio" name="select" id="select_two" value=""/>
+							<label for="select_two">
+								
+								<div class="name fl">阿兰蔬菜商户阿兰蔬菜商户</div>
+								
+								<div class="evaluate clear fr">
+									<div class="fl">好评（0）</div>
+									<div class="fl">中评（0）</div>
+									<div class="fl">差评（0）</div>
+								</div>
+								<div class="price fr">28元/KG</div>
+							</label>
+						</div>
+						<div class="more_con">
+							<div class="select_inner">
+								<input type="radio" name="select" id="select_three" value=""/>
+								<label for="select_three">
+									
+									<div class="name fl">阿兰蔬菜商户阿兰蔬菜商户</div>
+									
+									<div class="evaluate clear fr">
+										<div class="fl">好评（0）</div>
+										<div class="fl">中评（0）</div>
+										<div class="fl">差评（0）</div>
+									</div>
+									<div class="price fr">28元/KG</div>
+								</label>
+							</div>
+							<div class="select_inner">
+								<input type="radio" name="select" id="select_four" value=""/>
+								<label for="select_four">
+									<div class="name fl">阿兰蔬菜商户阿兰蔬菜商户</div>
+									
+									<div class="evaluate clear fr">
+										<div class="fl">好评（0）</div>
+										<div class="fl">中评（0）</div>
+										<div class="fl">差评（0）</div>
+									</div>
+									<div class="price fr">28元/KG</div>
+								</label>
+							</div>						
+						</div>
+						
+					</div>
+					<div class="more"></div>
+					<input type="submit" class="submit" value="确定"/>
+				</form>
+					
+					
+			</div>
+		</div>
+		
+		<!--底部导航-->
+		<nav class="f_nav clear">
+			<a href="index.html" class="fl sy" >
+				<img src="../images/home/aaa_03.jpg" />
+				<div class="name">首页</div>
+			</a>
+			<a href="collect.html" class="fl sc">
+				<img src="../images/home/aaa_05.jpg" />
+				<div class="name">我的收藏</div>
+			</a>
+			<a href="shopping.html" class="fl gwc">
+				<img src="../images/home/aaa_07.jpg" />
+				<div class="name">购物车</div>
+				<div class="num">0</div>
+			</a>
+			<a href="personalcenter.html" class="fl dd">
+				<img src="../images/home/aaa_09.jpg" />
+				<div class="name">我的东东</div>
+			</a>
+		</nav>
+		<!--底部导航结束-->
+		<!--联系方式qq-->
+		<div class="contact" style="display: none;">
+			<div class="con_inner">
+				<img src="../images/home/a_80.png" class="tri"/>
+				<div class="con_txt">企业&nbsp;QQ</div>
+				<!--<a href="http://wpa.qq.com/msgrd?v=3&uin=1198474638&site=qq&menu=yes"></a>-->
+				<a href="mqqwpa://im/chat?chat_type=wpa&uin=1198474638&version=1&src_type=web&web_src=oicqzone.com">
+					<img src="../images/home/a_83.jpg" alt="" class="qq" />
+				</a>
+				
+			</div>
+				
+			<img src="../images/home/a_101.png" alt="" class="btn" />
+		</div>
+		<!--联系方式qq结束-->
+		<script src="../js/details.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common/common.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

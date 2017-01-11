@@ -1,0 +1,83 @@
+body{
+	overflow: hidden;
+}
+.box{
+	width: 12.5rem;
+	background: #F7F7F7;
+	margin: 0 auto;
+	margin-top: 4.375rem;
+	padding: 0.625rem 1.125rem 1.1875rem;
+	font-size: 0.4375rem;
+}
+
+.box .title .left{
+	font-size: 0.75rem;
+	color: #00AC92;
+}
+.box .title .right{
+	color: #919191;
+}
+.box .title .right .change_color{
+	color: #EA8A01;
+}
+.box .input{
+	width: 12.5rem;
+	height: 1.4375rem;
+	border: 1px solid #DFDFDF;
+	margin-top: 1.0625rem;
+}
+.box .input .left{
+	width: 4.375rem;
+	height: 100%;
+	background: #00AC92;
+	color: #fff;
+	line-height: 1.4375rem;
+}
+.box .input .left span{
+	margin-left: 0.8125rem;
+}
+.box .input .left img{
+	width: 0.25rem;
+	margin-left: 0.8rem;
+	margin-top: 0.65625rem;
+}
+.box .input .right .verifyimg{
+	width: 3.4375rem;
+}
+.box .input .right .btn{
+	width: 3.4375rem;
+	height: 1.4375rem;
+	background: #DFDFDF;
+	text-align: center;
+	line-height: 1.4375rem;
+	cursor: pointer;
+}
+.box .input input[type="text"]{
+	width: 8.125rem;
+	height: 1.4375rem;
+	background: #fff;
+	font-size: 0.4375rem;
+	text-indent: 0.5rem;
+}
+.box .input input[type="password"]{
+	width: 8.125rem;
+	height: 1.4375rem;
+	background: #fff;
+	font-size: 0.4375rem;
+	text-indent: 0.5rem;
+}
+.box .agreement{
+	line-height: 1.25rem;
+	
+}
+.box .agreement a{
+	color: #00AC92;
+}
+.box input[type="submit"]{
+	width: 12.5rem;
+	height: 2.5rem;
+	background: #EA8A01;
+	color: #fff;
+	font-size: 0.75rem;
+	margin-top: 1.5625rem;
+}

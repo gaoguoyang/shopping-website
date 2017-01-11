@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>地址管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/addsite.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/footer.css"/>
+		<script src="../js/plugins/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/common-rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="javascript:history.go(-1);">
+				<img src="../images/details/b_03.jpg"/>
+			</a>
+			<span>选择地址</span>
+		</header>
+		<!--头部结束-->
+		<div class="content2">
+			<form action="" method="post">
+				<ul>
+					<li>
+						收货人：<input type="text" class="name"/>
+					</li>
+					<li>
+						手机号码：<input type="text" class="phone"/>
+					</li>
+					<li id="expressArea">
+						<dl class="clear">
+		                    <dt class="fl">选择地区：</dt>
+		                    <dd class="fl">省 > 市 > 区/县</dd>
+		                </dl>
+					</li>
+					<li>
+						详细地址： <input type="text" />
+					</li>
+				</ul>
+				<input class="submit" type="submit" value="保存"/>
+			</form>
+				
+			<!--选择地区弹层-->
+	        <section id="areaLayer" class="express-area-box">
+	            <div class="header">
+	                <h3>选择地区</h3>
+	                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+	                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+	            </div>
+	            <article id="areaBox">
+	                <ul id="areaList" class="area-list"></ul>
+	            </article>
+	        </section>
+	        <!--遮罩层-->
+	        <div id="areaMask" class="mask"></div>
+			
+		</div>
+		<!--底部导航-->
+		<nav class="f_nav clear">
+			<a href="index.html" class="fl sy" >
+				<img src="../images/home/aaa_03.jpg" />
+				<div class="name">首页</div>
+			</a>
+			<a href="collect.html" class="fl sc">
+				<img src="../images/home/aaa_05.jpg" />
+				<div class="name">我的收藏</div>
+			</a>
+			<a href="shopping.html" class="fl gwc" style="background: #C0F6B9;">
+				<img src="../images/home/bottom_06.png" />
+				<div class="name" style="color: #119200;">购物车</div>
+				<div class="num">0</div>
+			</a>
+			<a href="personalcenter.html" class="fl dd">
+				<img src="../images/home/aaa_09.jpg" />
+				<div class="name">我的东东</div>
+			</a>
+		</nav>
+		<!--底部导航结束-->
+		<script type="text/javascript">
+			$(".submit").click(function(){
+				var name = $(".name").val();
+				var phone = $(".phone").val();
+				if(name==""||name==null){
+					alert("请输入姓名！");
+					return false;
+				}else if(phone==""||phone==null){
+					alert("请输入手机号码！");
+					return false;
+				}
+			})
+		</script>
+		<script src="../js/plugins/jquery.area.js"></script>
+	</body>
+	
+</html>

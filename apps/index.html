@@ -1,0 +1,3217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>食品网站首页</title>
+		<link rel="stylesheet" href="../css/pc/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/pc/indexstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pc/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pc/top_bottom.css"/>
+		<script src="../js/pc/jquery-1.11.1.min.js"></script>
+		
+		<script src="../js/pc/bootstrap.min.js"></script>
+		<script src="../js/pc/indexmain.js"></script>
+		<style>
+		/*导航*/
+			.navUl .login a{
+				color: #000;
+			}
+			
+			/*背景色*/
+			body{
+				background: #F7F7F7;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<!--                 头部开始 			 -->
+			<div class="topNav">
+				<div class="topNavBody">
+					<ul class="navUl">
+						<li class="address">
+							<select name="" id="province">
+								 <!-- <option value="">海南</option>  -->
+							</select>
+							<p class="plus"></p>
+							<select name="" id="city">
+								<!-- <option value="">三亚</option> -->
+							</select>
+						</li>
+						<li class="login">
+							<p>
+								<span>HELLO,欢迎光临! 亲&nbsp;</span>
+								<span>[ &nbsp;<a href="signin.html" id="login">请登录</a>&nbsp; ]</span>
+								<span>&nbsp;<a href="register.html" id="signup">免费注册</a></span>
+							</p>
+							<p>
+								<span class="upright"></span>
+								<a href="collect.html">
+									<span>我的收藏</span>
+								</a>
+								
+							</p>
+							<p class="dongdong">
+								<span class="upright"></span>
+								<a href="go.html" >
+									<span>我的东东</span>
+								</a>
+								
+								<span class="triangle"></span>
+								<b class="mine">
+									<a href="jifen.html" >我的积分</a>
+									<a href="my_order.html" >我的订购</a>
+								</b>
+							</p>
+							<p>
+								<span class="upright"></span>
+								<a href="help_integral.html">
+									<span>帮助中心</span>
+								</a>
+								<span class="triangle"></span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="logo_mark">
+					<div id="logo">
+						<img src="../images/web/index/logo.png"/>
+					</div>
+					<ol class="mark_second">
+						<li>
+							<input type="text" id="text_input" placeholder="请输入您的关键词..."/>
+							<input type="button" value="搜索" id="submit"/>
+						</li>
+						<li class="shop_cart">
+							<a href="shopCar.html">
+								<p class="shop_text">
+									我的购物车
+									<span>0</span>
+								</p>
+							</a>							
+						</li>
+						<li class="hid_shop" >
+							<ul id="hid_content">
+								<li class="hidFir">满99元包邮</li>
+								<li class="hid_add">
+									<dl class="shopping">
+										<dt>
+											<img src="../images/web/index/glass.png"/>
+										</dt>
+										<dd>
+											<p>买2送镜盒艾丽可小布丁大小直径...</p>
+											<p class="price"><span>￥84.00</span>元/盒</p>
+											<a href="###" class="delete"><span>删除</span></a>
+										</dd>
+									</dl>
+								</li>
+								<li class="hid_add">
+									<dl class="shopping">
+										<dt>
+											<img src="../images/web/index/glass.png"/>
+										</dt>
+										<dd>
+											<p>买2送镜盒艾丽可小布丁大小直径...</p>
+											<p class="price"><span>￥84.00</span>元/盒</p>
+											<a href="###" class="delete"><span>删除</span></a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div id="hid_bottom">
+								<ol class="hid_bottom_body">
+									<li class="goods">
+										<p>共有<span id="number">2</span>件商品</p>
+										<p>总重<span id="weight">1.6kg</span>(含包装)</p>
+									</li>
+									<li>
+										<p>共计：￥<span id="total_price">168.00</span>元</p>
+										<p id="pay"><a href="###">去购物车结算</a></p>
+									</li>
+								</ol>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="classifyFa">
+					<ul class="classify"> 
+						<li class="good_whole">
+							<p><a href="###">全部商品分类</a></p>
+						</li>
+						<li><a href="index.html">首 &nbsp;页</a></li>
+						<!--<li><a href="">厨师联盟</a></li>-->
+						<li><a href="details.html">团购商品</a></li>
+						<li><a href="news.html">新闻资讯</a></li>
+						<li class="business">
+							<a href="league.html">招商</a>
+							<p class="hot"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--                 头部结束                 -->
+			<div id="classes">
+				<div id="detail">
+					<div id="detail_bg">
+						<div id="detail_body">	
+							<div class="all_goods">
+								<div class="goodsFa_border">
+									<ol class="goodsFa">
+										<li id="one">
+											<a href="">
+												<p class="small_mark mark1"></p>
+												<p class="small_mark_ mark1_2"></p>
+												<span>每日蔬菜</span>
+												<p class="right_arrow arrow1"></p>
+											</a>
+										</li>
+										<li id="two">
+											<a href="">
+												<p class="small_mark mark2"></p>
+												<p class="small_mark_ mark2_2"></p>
+												<span>应季水果</span>
+												<p class="right_arrow arrow2"></p>
+											</a>
+										</li>
+										<li id="three">
+											<a href="">
+												<p class="small_mark mark3"></p>
+												<p class="small_mark_ mark3_2"></p>
+												<span>精品肉类</span>
+												<p class="right_arrow arrow3"></p>
+											</a>
+										</li>
+										<li id="four">
+											<a href="">
+												<p class="small_mark mark4"></p>
+												<p class="small_mark_ mark4_2"></p>
+												<span>生鲜水产</span>
+												<p class="right_arrow arrow4"></p>
+											</a>
+										</li>
+										<li id="five">
+											<a href="">
+												<p class="small_mark mark5"></p>
+												<p class="small_mark_ mark5_2"></p>
+												<span>冷冻食品</span>
+												<p class="right_arrow arrow5"></p>
+											</a>
+										</li>
+										<li id="six">
+											<a href="">
+												<p class="small_mark mark6"></p>
+												<p class="small_mark_ mark6_2"></p>
+												<span>干货调料</span>
+												<p class="right_arrow arrow6"></p>
+											</a>
+										</li>
+										<li id="seven">
+											<a href="">
+												<p class="small_mark mark7"></p>
+												<p class="small_mark_ mark7_2"></p>
+												<span>饮料美酒</span>
+												<p class="right_arrow arrow7"></p>
+											</a>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmone" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmtwo" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmthree" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmfour" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmfive" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmsix" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<div id="confirmseven" class="tab_div">
+									<ul class="classifyDetail">
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">海鲜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">大闸蟹</a>
+												<a href="">帝王蟹</a>
+												<a href="">海参</a>
+												<a href="">金枪鱼</a>
+												<a href="">鲍鱼</a>
+												<a href="">红虾</a>
+												<a href="">北极贝</a>
+												<a href="">银鳕鱼</a>
+												<a href="">章鱼</a>
+												<a href="">花胶</a>
+												<a href="">青蟹</a>
+												<a href="">干贝/瑶柱</a>
+												<a href="">海菜</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">水果</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">车厘子</a>
+												<a href="">苹果</a>
+												<a href="">橙子</a>
+												<a href="">猕猴桃</a>
+												<a href="">柠檬</a>
+												<a href="">牛油果</a>
+												<a href="">蓝莓</a>
+												<a href="">芒果</a>
+												<a href="">石榴</a>
+												<a href="">梨</a>
+												<a href="">葡萄/提子</a>
+												<a href="">释迦</a>
+												<a href="">龙眼</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">肉禽蛋</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">牛排</a>
+												<a href="">土猪肉</a>
+												<a href="">土鸡</a>
+												<a href="">羊肉</a>
+												<a href="">火腿</a>
+												<a href="">腊肉</a>
+												<a href="">鸽子蛋</a>
+												<a href="">鸭肉</a>
+												<a href="">香肠/腊肠</a>
+												<a href="">培根</a>
+												<a href="">乌骨鸡</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蔬菜</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">蔬菜</a>
+												<a href="">山药</a>
+												<a href="">番薯</a>
+												<a href="">土豆</a>
+												<a href="">莲藕</a>
+												<a href="">净菜</a>
+												<a href="">马蹄</a>
+												<a href="">芋头</a>
+												<a href="">生姜</a>
+												<a href="">大蒜</a>
+												<a href="">秋葵</a>													
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">蛋/蛋制品</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">土鹅蛋</a>
+												<a href="">农村土鸡蛋</a>
+												<a href="">红鸡蛋</a>
+												<a href="">香山咸蛋黄</a>
+												<a href="">满月喜蛋</a>												
+											</p>
+										</li>
+										<li>
+											<p class="goods_nav">
+												<span class="verticalBar"></span>
+												<span class="haixian">新鲜蛋糕</span>
+												<span class="verticalBar"></span>
+											</p>
+											<p class="allA">
+												<a href="">好利来</a>
+												<a href="">祝寿蛋糕</a>
+												<a href="">简屋蛋糕</a>
+												<a href="">面包新语</a>
+												<a href="">克里斯汀</a>
+												<a href="">彩虹蛋糕</a>													
+											</p>
+										</li>
+									</ul>
+									<ol class="Advert1">
+										<li class="advert1">
+											<span>分分钟嗨享</span>
+											<h2>全牛排大餐</h2>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</li>
+										<li class="advert2">
+											<img src="../images/web/index/advert2.png"/>
+										</li>
+									</ol>
+								</div>
+								<ul class="Advert2">
+									<li class="advert3">
+										<div class="steak">
+											<span>分分钟嗨享</span>
+											<h3>全牛排大餐</h3>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</div>
+										<img src="../images/web/index/advert2.png" alt="" />
+									</li>
+									<li class="advert4">
+										<div class="steak">
+											<span>分分钟嗨享</span>
+											<h3>全牛排大餐</h3>
+											<p>与家人、朋友、热爱一起</p>
+											<a href="">立即购买</a>
+										</div>
+										<img src="../images/web/index/advert2.png" alt="" />
+									</li>
+								</ul>
+								
+							</div>
+							<div id="myCarousel" class="carousel slide">
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="../images/web/index/food_bg.png" alt="第一张">
+									</div>
+									<div class="item">
+										<img src="../images/web/index/food_bg.png" alt="第二张">
+									</div>
+									<div class="item">
+										<img src="../images/web/index/food_bg.png" alt="第三张">
+									</div>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>			
+			<div id="body">
+				<div class="contentOne">
+					<div class="newGoods">
+						<p class="newG_pic"></p>
+						<div class="newG_text">
+							<p>
+								<span class="borderSpan">新</span>
+								<span class="borderSpan">款</span>
+								<span class="borderSpan">爆</span>
+								<span>品</span>
+							</p>							
+							<span class="newEng">NEW EXPLOSIVE</span>
+							<h1 class="line"></h1>
+						</div>
+					</div>
+					<div class="goodList_fa">
+						<ul class="goodList" id="goodList1">
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list1.png" alt="" />
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price1" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list2.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price2" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold2" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list3.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price3" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold2" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list1.png" alt="" />
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price4" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list1.png" alt="" />
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price5" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+						</ul>
+						<ol class="goodList" id="goodList2">
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list4.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price6" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list4.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price7" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list4.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price8" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list4.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price9" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+							<li class="good_list">
+								<ol class="good_list_ol">
+									<li class="pic_fa">
+										<img src="../images/web/index/list4.png" alt=""  class="middle_auto"/>
+									</li>
+									<li>
+										<div>
+											<p class="Price">
+												<span id="price10" class="priceFont">￥39.00</span>
+												<span>元/斤</span>
+											</p>
+											<p class="haveSold">
+												<span>已售</span>
+												<span id="haven_sold1" class="haven_sold">0</span>
+												<span>件</span>
+											</p>
+										</div>
+										<p class="description">三都港&nbsp;冰冻三去小黄花鱼&nbsp;500g...</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow">立即购买</a>
+										<a href="" class="storeUp">收藏商品</a>
+									</li>
+								</ol>
+							</li>
+						</ol>
+						<ul class="arrowFa">
+							<li class="leftArrow"></li>
+							<li class="rightArrow"></li>
+						</ul>
+					</div>
+					<div class="setDeadline">
+						<ul class="timeLimit">
+							<li class="timeLimitFirst">
+								<div class="firstContent">
+									<div class="timeLimPifa">
+										<p class="timeLimPifa_bg">
+											<span class="clock_white"></span>
+											<span class="timeLimText">限时批发</span>
+											<span class="timeLimEng fontSmallSize">THE LIMIT WHOLESALE</span>
+										</p>
+										<p class="triangleDown"></p>
+									</div>
+									<div class="countDown">
+										<p class="distance">距离结束还剩</p>
+										<p class="countDownCon">
+											<span id="day"></span>
+											<span>天</span>
+											<span id="hour"></span>
+											<span>时</span>
+											<span id="minute"></span>
+											<span>分</span>
+										</p>
+										<div class="timeLimTuan">
+											<p class="timeLimPifa_bg">
+												<span class="clock_black"></span>
+												<span class="timeLimText">限时团购</span>
+												<span class="timeLimEng fontSmallSize">THE LIMIT GROUP PURCHASE</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="timeLimitSame">
+								<ul>
+									<li class="listPic">
+										<img src="../images/web/index/list5.png" class="img_middle"/>
+									</li>
+									<li class="zongzi">
+										<p class="textCenter">五芳斋粽子礼盒 情系</p>
+										<p>
+											<span>批发价:</span>
+											<span id="sprice11" class="priceFont">￥98.00</span>
+											<span>元/盒</span>
+										</p>
+										<p>
+											<span>已售</span>
+											<span id="soldNum1" class="haven_sold">0</span>
+											<span>件</span>
+										</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow1">立即购买</a>
+										<a href="" class="storeUp1">收藏商品</a>
+									</li>
+								</ul>
+							</li>
+							<li class="timeLimitSame">
+								<ul>
+									<li class="listPic">
+										<img src="../images/web/index/list6.png" class="middle_auto1"/>
+									</li>
+									<li class="zongzi">
+										<p class="textCenter">富锦开心果 160g</p>
+										<p>
+											<span>批发价:</span>
+											<span id="sprice12" class="priceFont">￥98.00</span>
+											<span>元/盒</span>
+										</p>
+										<p>
+											<span>已售</span>
+											<span id="soldNum2" class="haven_sold">0</span>
+											<span>件</span>
+										</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow1">立即购买</a>
+										<a href="" class="storeUp1">收藏商品</a>
+									</li>
+								</ul>
+							</li>
+							<li class="timeLimitSame">
+								<ul>
+									<li class="listPic">
+										<img src="../images/web/index/list7.png" class="middle_auto2"/>
+									</li>
+									<li class="zongzi">
+										<p class="textCenter">绿林贝超高温灭菌全脂牛奶...</p>
+										<p>
+											<span>批发价:</span>
+											<span id="sprice13" class="priceFont">￥98.00</span>
+											<span>元/盒</span>
+										</p>
+										<p>
+											<span>已售</span>
+											<span id="soldNum3" class="haven_sold">0</span>
+											<span>件</span>
+										</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow1">立即购买</a>
+										<a href="" class="storeUp1">收藏商品</a>
+									</li>
+								</ul>
+							</li>
+							<li class="timeLimitSame">
+								<ul>
+									<li class="listPic">
+										<img src="../images/web/index/list7.png" class="middle_auto2"/>
+									</li>
+									<li class="zongzi">
+										<p class="textCenter">五芳斋粽子礼盒 情系</p>
+										<p>
+											<span>批发价:</span>
+											<span id="sprice14" class="priceFont">￥98.00</span>
+											<span>元/盒</span>
+										</p>
+										<p>
+											<span>已售</span>
+											<span id="soldNum4" class="haven_sold">0</span>
+											<span>件</span>
+										</p>
+									</li>
+									<li class="hid_buy">
+										<a href="" class="buyNow1">立即购买</a>
+										<a href="" class="storeUp1">收藏商品</a>
+									</li>
+								</ul>
+							</li>
+							<li class="timeLimitLast">
+								<ol class="timeLast1">
+									<li class="timeLast1_one">
+										<h1 class="strong">海南精选木瓜</h1>
+										<p class="xiangtian">籽黑肉红&nbsp;软糯香甜</p>
+									</li>
+									<li class="timeLast1_two">
+										<a href="#">
+											<span class="red_font">9.9元/一粒起</span>
+											<span class="red_arrow">></span>
+										</a>										
+									</li>
+								</ol>
+								<div class="timeLast2">
+									<img src="../images/web/index/mugua.png"/>
+								</div>
+							</li>
+						</ul>
+						<ol class="newsInformation">
+							<li class="news_title">
+								<p class="left_bg"></p>
+								<p class="content_bg">
+									<span class="fontSize18">新闻资讯</span>
+									<span class="fontSize12">--- NEWS INFORMATION ---</span>
+								</p>
+								<p class="right_bg"></p>
+							</li>
+							<li class="Advert3">
+								<img src="../images/web/index/yanmai.png"/>
+							</li>
+							<li class="LastInfor">
+								<p class="LastInforTitle">
+									<strong class="LastInforText">最新资讯</strong>
+									<a href="#" class="more fontSize12">更多></a>
+								</p>
+								<ul id="inforDetail">
+									<li class="">
+										<a href="#" class="fontSize12">
+											<span>巴黎水中奖信息公布</span>
+											<span class="Date">2016.03.06</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="fontSize12">
+											<span>APP满299抽iPhone6s中奖公告</span>
+											<span class="Date">2016.03.06</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="fontSize12">
+											<span>寻找心中的茶美人抽奖名单...</span>
+											<span class="Date">2016.03.06</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="fontSize12">
+											<span>答题赢取一年免费茶抽奖名单公布</span>
+											<span class="Date">2016.03.06</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</div>					
+				</div>				
+				<ul id="floornav">
+					<li class="floorMark floorMark1" id="0"></li>
+					<li class="floorMark floorMark2" id="1"></li>
+					<li class="floorMark floorMark3" id="2"></li>
+					<li class="floorMark floorMark4" id="3"></li>
+					<li class="floorMark floorMark5" id="4"></li>
+					<li class="floorMark floorMark6" id="5"></li>
+					<li class="floorMark floorMark7" id="6"></li>
+					<li id="shopCar">
+						<span id="shopcarNumber" class="fontSize18">0</span>
+					</li>
+				</ul>
+				<div class="contentTwo">
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark1"></span>
+									<span class="fontSize18 thisGreen">每日蔬菜</span>
+									<span class="fontSize12 fontGray">| 来自田间，新鲜犹存 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="priceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="haveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="priceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="haveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="priceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="haveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="priceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="haveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="priceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="haveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="priceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="haveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="priceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="haveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="priceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="haveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark2"></span>
+									<span class="fontSize18 thisGreen">应季水果</span>
+									<span class="fontSize12 fontGray">| 果林直摘，新鲜可口 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="TwopriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="TwohaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="TwopriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="TwohaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="TwopriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="TwohaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="TwopriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="TwohaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="TwopriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="TwohaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="TwopriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="TwohaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="TwopriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="TwohaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="TwopriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="TwohaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark3"></span>
+									<span class="fontSize18 thisGreen">精品肉类</span>
+									<span class="fontSize12 fontGray">| 精选肉质，安全放心 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="ThreepriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="ThreehaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="ThreepriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="ThreehaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="ThreepriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="ThreehaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="ThreepriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="ThreehaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="ThreepriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="ThreehaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="ThreepriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="ThreehaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="ThreepriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="ThreehaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="ThreepriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="ThreehaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark4"></span>
+									<span class="fontSize18 thisGreen">生鲜水产</span>
+									<span class="fontSize12 fontGray">| 浓郁海味，领“鲜”一步 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FourpriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FourhaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FourpriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FourhaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FourpriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FourhaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FourpriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FourhaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FourpriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FourhaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FourpriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FourhaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FourpriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FourhaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FourpriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FourhaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark5"></span>
+									<span class="fontSize18 thisGreen">冷冻食品</span>
+									<span class="fontSize12 fontGray">| 快手料理，想吃就吃 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FivepriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FivehaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FivepriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FivehaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="FivepriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="FivehaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FivepriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FivehaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FivepriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FivehaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FivepriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FivehaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FivepriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FivehaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="FivepriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="FivehaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark6"></span>
+									<span class="fontSize18 thisGreen">干货调料</span>
+									<span class="fontSize12 fontGray">| 酸甜苦辣，随您心意 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SixpriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SixhaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SixpriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SixhaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SixpriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SixhaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SixpriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SixhaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SixpriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SixhaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SixpriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SixhaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SixpriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SixhaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SixpriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SixhaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="floorContent">
+						<div class="floor_content">
+							<div class="floor_content_title">
+								<p class="green_border">
+									<span class="floor_content_mark floor_content_mark7"></span>
+									<span class="fontSize18 thisGreen">饮料美酒</span>
+									<span class="fontSize12 fontGray">| 大牌优势，口感醇正 |</span>
+								</p>
+								<p class="gray_border"></p>
+							</div>
+							<ol class="vegeList">
+								<li class="vegeList1">
+									<div class="wulagui">
+										<img src="../images/web/index/wulagui.png" class="img_middle2"/>
+									</div>
+									<div class="allCows">
+										<div class="allA2">
+											<a href="">牛排</a>
+											<a href="">羊腱子</a>
+											<a href="">牛肚</a>
+											<a href="">羊腱子</a>
+											<a href="">羊腱子</a>
+											<a href="">牛排</a>
+										</div>
+									</div>
+								</li>
+								<li class="vegeList2">
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SevenpriceNumber1" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SevenhaveSoldNumber1" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SevenpriceNumber2" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SevenhaveSoldNumber2" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+									<ul class="hid_buy_fa">
+										<li class="goodsPic">
+											<a href="">
+												<img src="../images/web/index/rou.png" alt="">
+											</a>											
+										</li>
+										<li class="goodsDescri">
+											<p class="fontSize16">恒都 有机切片上脑牛排 500g</p>
+											<p class="marginTop15">
+												<span id="SevenpriceNumber3" class="fontSize18 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+											</p>
+											<p>
+												<span class="fontGray">已售</span>
+												<span id="SevenhaveSoldNumber3" class="fontRed">0</span>
+												<span class="fontGray">件</span>
+											</p>
+										</li>
+										<li class="hid_buy1">
+											<a href="" class="buyNow2">立即购买</a>
+											<a href="" class="storeUp2">收藏商品</a>
+										</li>
+									</ul>
+								</li>
+								<li class="vegeList3">
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SevenpriceNumber4" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SevenhaveSoldNumber4" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SevenpriceNumber5" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SevenhaveSoldNumber5" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SevenpriceNumber6" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SevenhaveSoldNumber6" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SevenpriceNumber7" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SevenhaveSoldNumber7" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+									<ol class="hid_buy_fa2">
+										<li class="goodsPic2">
+											<a href="">
+												<img src="../images/web/index/rou2.png" alt="">
+											</a>
+										</li>
+										<li class="goodsDescri2">
+											<p class="fontSize12 MarginLeft">恒都 有机切片上脑牛排 500g</p>
+											<p class="Margin">
+												<span id="SevenpriceNumber8" class="fontSize16 fontGreen">￥36.00</span>
+												<span class="fontSize12">元/盒</span>
+												<span class="fontGray fontSize12">已售</span>
+												<span id="SevenhaveSoldNumber8" class="fontRed fontSize12">0</span>
+												<span class="fontGray fontSize12">件</span>
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<ol class="Advert5">
+						<li class="timeLimitLast">
+							<ol class="timeLast1">
+								<li class="timeLast1_one">
+									<h1 class="strong">海南精选木瓜</h1>
+									<p class="xiangtian">籽黑肉红&nbsp;软糯香甜</p>
+								</li>
+								<li class="timeLast1_two">
+									<a href="#">
+										<span class="red_font">9.9元/一粒起</span>
+										<span class="red_arrow">></span>
+									</a>										
+								</li>
+							</ol>
+							<div class="timeLast2">
+								<img src="../images/web/index/mugua.png"/>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<!-- ///////////尾部开始/////// -->
+
+				<div class="bottom">
+					<div class="friendLink">
+						<p>
+							<span class="fontSize18 fontGray">友情链接 |</span>
+							<span>
+								<a href="" class="fontGray">海南新闻网</a>
+								<a href="" class="fontGray">海南新闻网</a>
+								<a href="" class="fontGray">海南新闻网</a>
+								<a href="" class="fontGray">海南新闻网</a>
+								<a href="" class="fontGray">海南新闻网</a>
+								<a href="" class="fontGray">海南新闻网</a>
+							</span>
+						</p>
+					</div>
+					<div class="peculiarities">
+						<ol class="peculiarity peculiarity1">
+							<li class="peculiarity_logo peculiarity1_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">产地直采</p>
+								<p class="fontSize12">DIRECT MINING AREA</p>
+								<p>价格优惠 质量保证</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity2">
+							<li class="peculiarity_logo peculiarity2_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">品种齐全</p>
+								<p class="fontSize12">COMPLETE VARIETIES</p>
+								<p>您想要的 我们都有</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity3">
+							<li class="peculiarity_logo peculiarity3_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">冷链配送</p>
+								<p class="fontSize12 fontSmallSize timeLimEng">COLD CHAIN DISTRIBUTION</p>
+								<p>全程冷链 保持新鲜</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity4">
+							<li class="peculiarity_logo peculiarity4_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">品质保证</p>
+								<p class="fontSize12">QUALITY ASSURANCE</p>
+								<p>精选产品 质量保证</p>
+							</li>
+						</ol>
+					</div>
+					<div class="bottomContent">
+						<ul>
+							<li class="bottomContent1">
+								<img src="../images/web/index/logo2.png" id="logo2"/>
+								<div class="fontGray customService">
+									<p>
+										<span class="circlrPoint"></span>
+										<span>客服电话 400-606-5500</span>
+									</p>
+									<p>
+										<span class="circlrPoint"></span>
+										<span>客服时间 0:00-24:00</span>
+									</p>
+									<p>
+										<span class="circlrPoint"></span>
+										<span>在线客服 9:00-24:00</span>
+									</p>
+								</div>
+								<div class="copyRight fontColor72">
+									Copyright &copy; 2004-2016 xxxx 版权所有
+								</div>
+							</li>
+							<li class="bottomContent2 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">配送服务</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分制度</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>会员介绍</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>购物流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>会员政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分政策</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent3 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">购物指南</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>全程冷链</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送时间</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送范围</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送收费标准</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent4 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">支付方式</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>货到付款</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>在线支付</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>其他支付方式</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>优惠券使用</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分使用</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent5 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">售后服务</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>验货与拒收政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退换货政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退换货流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退款流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>发票制度</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent6 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">商家中心</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>商家规则</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>食品流通许可证</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>营业执照</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>用户协议</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>用户须知</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent7">
+								<p class="fontColor72">官方微信二维码</p>
+								<a href="">
+									<img src="../images/web/index/erweima.png" class="erweima"/>
+								</a> 
+								<p class="fontColorye">
+									[ 用微信扫一扫关注我们 ]
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- /////////// 尾部结束 /////// -->
+			</div>
+		</div>
+	</body>
+</html>

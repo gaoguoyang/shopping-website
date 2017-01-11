@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>招商平台</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/league.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common/footer.css"/>
+		<script src="../js/plugins/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/common-rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="javascript:history.go(-1);">
+				<img src="../images/details/b_03.jpg"/>
+			</a>
+			<span>招商平台</span>
+		</header>
+		<!--头部结束-->
+		<div class="content">
+			<img src="../images/img/z_11.jpg" class="title"/>
+			<form action="" method="post" id="form">
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">姓名：</span>
+					<input type="text" class="fl name"/>
+				</div>
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">手机：</span>
+					<input type="text" class="fl mobile_phone"/>
+				</div>
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">邮箱：</span>
+					<input type="text" class="fl mailbox"/>
+				</div>
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">电话：</span>
+					<input type="text" class="fl phone"/>
+				</div>
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">地址：</span>
+					<input type="text" class="fl location" style="width: 9rem;"/>
+				</div>
+				<div class="input clear">
+					<s class="fl">*</s>
+					<span class="fl">回访：</span>
+					
+					<input class="fl time" checked type="radio" name="time" id="time1" value="随时"/><label class="fl" for="time1">随时</label>
+					<input class="fl time" type="radio" name="time" id="time2" value="上班时间"/><label class="fl" for="time2">上班时间</label>
+					<input class="fl time" type="radio" name="time" id="time3" value="下班时间"/><label class="fl" for="time3">下班时间</label>
+				</div>
+				<div class="input" style="height: auto;">
+					<s class="fl">*</s>
+					<span class="fl">留言：</span>
+					<textarea name="" rows="" cols=""></textarea>
+				</div>
+				<input class="submit" type="submit" value="确认提交"/>
+			</form>
+		</div>
+		<!--底部导航-->
+		<nav class="f_nav clear">
+			<a href="index.html" class="fl sy" >
+				<img src="../images/home/aaa_03.jpg" />
+				<div class="name">首页</div>
+			</a>
+			<a href="collect.html" class="fl sc">
+				<img src="../images/home/aaa_05.jpg" />
+				<div class="name">我的收藏</div>
+			</a>
+			<a href="shopping.html" class="fl gwc">
+				<img src="../images/home/aaa_07.jpg" />
+				<div class="name">购物车</div>
+				<div class="num">0</div>
+			</a>
+			<a href="personalcenter.html" class="fl dd">
+				<img src="../images/home/aaa_09.jpg" />
+				<div class="name">我的东东</div>
+			</a>
+		</nav>
+		<!--底部导航结束-->
+		<script type="text/javascript">
+			$(function(){
+				$(".submit").click(function(){
+					
+					var name = $(".name").val();
+					var mobile_phone = $(".mobile_phone").val();
+					var mailbox = $(".mailbox").val();
+					var phone = $(".phone").val();
+					var location = $(".location").val();
+					var note = $("textarea").val();
+	
+					if(name==null || name==""){
+						alert("请输入您的姓名！");
+						return false;
+					}else if(mobile_phone==null || mobile_phone==""){
+						alert("请输入您的手机号！");
+						return false;
+					}else if(mailbox==null || mailbox==""){
+						alert("请输入您的邮箱！");
+						return false;
+					}else if(phone==null || phone==""){
+						alert("请输入您的电话！");
+						return false;
+					}else if(location==null || location==""){
+						alert("请输入您的地址！");
+						return false;
+					}else if(note==null || note==""){
+						alert("请输入您的留言！");
+						return false;
+					}else{
+						$("#form").submit();
+					}
+					
+					
+					
+				})
+			})
+				
+		</script>
+	</body>
+</html>

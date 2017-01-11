@@ -1,0 +1,65 @@
+#body .head{
+	width: 100%;
+	height: 36px;
+	background: #13A200;
+	line-height: 36px;
+	color: #fff;
+	text-indent: 1em;
+	
+}
+form{
+	width: 100%;
+	height: auto;
+	border: 1px solid #DBDBDB;
+	background: #fff;
+	margin-bottom: 16px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #333;
+	margin-top: 20px;
+}
+form s{
+	font-size: 12px;
+	color: #B80000;
+	text-decoration: none;
+	line-height: 30px;
+	width: 10px;
+}
+form textarea{
+	width: 470px;
+	height: 125px;
+	border: 1px solid #eee;
+}
+form .input{
+	margin-top: 18px;
+	line-height: 30px;
+}
+form input[type="text"]{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #eee;
+}
+form input[type="radio"]{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+form span{
+	line-height: 30px;
+}
+form .center,form .right{
+	margin-left: 12px;
+}
+form input.location{
+	width: 276px;
+}
+form input[type="submit"]{
+	display: block;
+	width: 128px;
+	height: 38px;
+	background-image: url(../../images/img/bg_07.jpg);
+	background-size: 100% 100%;
+	font-size: 14px;
+	color: #fff;
+}

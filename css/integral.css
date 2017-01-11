@@ -1,0 +1,140 @@
+header{
+	width: 100%;
+	height: 2.625rem;
+	background: #0F7F00;
+	line-height: 2.625rem;
+	text-align: center;
+	position: relative;
+}
+header img{
+	width: 1.0625rem;
+	position: absolute;
+	left: 0.4375rem;
+	top: 0.875rem;
+	
+}
+header span{
+	font-size: 0.75rem;
+	color: #fff;
+	margin:0 auto;
+}
+.content{
+	padding: 0 0.5rem;
+	border-top: 1px solid #D6D6D6;
+	background: #fff;
+	margin-top: 0.1875rem;
+	overflow: hidden;
+	font-size: 0.4375rem;
+}
+.content ul.header{
+	font-size: 0.4375rem;
+	/*background: pink;*/
+	margin-top: 0.1875rem;
+}
+.content ul.header li{
+	width: 25%;
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+	box-sizing: border-box;
+	text-align: center;
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+	
+}
+.content ul.header li:first-child{
+	border-left: 1px solid #D6D6D6;
+}
+.content .integral{
+	padding: 0.625rem 0;
+	background: #F5F5F5;
+	margin-top: 0.25rem;
+	font-size: 0.5rem;
+}
+.content .integral .num{
+	font-size: 1rem;
+	color: #0F7F00;
+	margin-top: 0.3rem;
+}
+.content .integral .left{
+	width: 6rem;
+	text-indent: 1.5rem;
+	border-right: 1px solid #D6D6D6;
+	padding-bottom: 0.625rem;
+}
+.content .integral .right{
+	text-indent: 1.5rem;
+}
+.content .integral .right .date{
+	color: #BEBEBE;
+}
+.content ul.msg_title{
+	margin-top: 0.3rem;
+}
+.content ul.msg_title li{
+	/*width: 25%;*/
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+	box-sizing: border-box;
+	text-align: center;
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+}
+.content ul.msg_title .use{
+	width: 10.75rem;
+	background: #FF9C00;
+	text-align: left;
+	text-indent: 0.875rem;
+	color: #fff;
+}
+.content ul.msg_title .change{
+	width: 2.9375rem;
+}
+.content ul.msg_title .date{
+	width: 3.1875rem;
+}
+.content ul.msg_title .label{
+	width: 2.125rem;
+}
+.content ul.msg{
+	
+}
+.content ul.msg li{
+	height: 2.25rem;
+	border-bottom: 1px dashed #D6D6D6;
+}
+.content ul.msg li .use{
+	width: 10.75rem;
+}
+.content ul.msg li .change{
+	width: 2.9375rem;
+	text-align: center;
+	line-height: 2.25rem;
+	font-size: 1rem;
+	color: #FF9C00;
+}
+.content ul.msg li .date{
+	width: 3.1875rem;
+	text-align: center;
+	line-height: 2.25rem;
+	
+}
+
+.content ul.msg li .label{
+	width: 2.125rem;
+	text-align: center;
+	line-height: 2.25rem;
+}
+
+.content ul.msg li .use img{
+	width: 1.375rem;
+	margin-top: 0.4375rem;
+	margin-left: 0.1875rem;
+}
+.content ul.msg li .use .describe{
+	width: 7.5rem;
+	line-height: 0.625rem;
+	margin-top: 0.4375rem;
+	margin-left: 0.1875rem;
+}

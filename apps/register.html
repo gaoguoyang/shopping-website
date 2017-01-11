@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页</title>
+		<link rel="stylesheet" type="text/css" href="../css/plugins/global.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="../css/pc/register.css"/>
+		
+		<script src="../js/pc/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="w1200">
+			<header>
+				<img src="../images/web/index/logo.png"/>
+				<span>欢迎注册</span>
+			</header>
+			<div class="goSignin">
+				<span>已有账号&nbsp;请<a href="signin.html">登录</a></span>
+			</div>
+			<div class="box">
+				<form action="" method="post" id="form">
+					<div class="input clear">
+						<div class="left fl clear">
+							<span class="fl">中国&nbsp+&nbsp86</span>
+							<img src="../images/web/img/arrows.jpg" class="fl"/>
+						</div>
+						<div class="right fl">
+							<input type="text" name="" id="" value="" placeholder="请使用常用手机号码进行注册" class="photo" />
+						</div>
+					</div>
+					<div class="input clear">
+						<div class="left fl clear">
+							<span class="fl">设置密码</span>
+							
+						</div>
+						<div class="right fl">
+							<input type="password" name="" id="" value="" placeholder="建议至少使用两种字符组合" class="password1" />
+						</div>
+					</div>
+					<div class="input clear">
+						<div class="left fl clear">
+							<span class="fl">确认密码</span>
+							
+						</div>
+						<div class="right fl">
+							<input type="password" name="" id="" value="" placeholder="请再次输入密码" class="password2" />
+						</div>
+					</div>
+					<div class="input clear">
+						<div class="left fl clear">
+							<span class="fl">验证码</span>
+							
+						</div>
+						<div class="right fl clear">
+							<input type="text" name="" id="" value="" placeholder="请输入验证码" class="test" style="width: 150px;float: left;" />
+							<img src="../images/img/n_03.jpg" class="verifyimg" />
+						</div>
+					</div>
+					<div class="input clear">
+						<div class="left fl clear">
+							<span class="fl">手机验证码</span>
+							
+						</div>
+						<div class="right fl clear">
+							<input type="text" name="" id="" value="" placeholder="请输入手机验证码" class="photo_test" style="width: 150px;float: left;" />
+							<div class="fl btn">获取验证码</div>
+						</div>
+					</div>
+					<div class="agreement">
+						<input type="checkbox" checked name="" id="" value="" />
+						我已阅读并同意<a href="">《东东食材配送用户注册协议》</a>
+					</div>
+				
+					<input type="submit" class="submit" value="立即注册"/>
+				</form>
+			</div>
+			<div class="bottom">
+				<div class="one">
+					<a href="">全球美食</a>|
+					<a href="">厨师联盟</a>|
+					<a href="">团购商品</a>|
+					<a href="">新闻资讯</a>|
+					<a href="">联系我们</a>
+									
+				</div>
+				<div class="two">
+					<p>海南东东食材配送有限公司</p>
+					<p>海南省公安局海口分局备案11011302000890号|京ICP备12011349号|企业营业执照</p>
+					<p>Copyright©东东食材配送 sfbest.com 版权所有</p>
+				</div>
+			</div>
+		</div>
+			
+		<script type="text/javascript">
+			$(function(){
+				var time1;
+				var photo=null;
+				var password1=null;
+				var password2=null;
+				var test=null;
+				var photo_test=null;
+				
+				$(".photo").blur(function(){
+					photo = $(".photo").val();
+					var re = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i;
+					if( photo=="" || photo==null ){
+						alert("手机号码不能为空！")
+					}else{
+						if(re.test(photo)){
+							
+						}else{
+							alert("手机号码格式错误！");
+						}
+					}
+				})
+				
+				$(".password1").blur(function(){
+					password1 = $(".password1").val();
+					
+				})
+				$(".password2").blur(function(){
+					password2 = $(".password2").val();
+					if (password2 == password1){
+						
+					}else{
+						alert("两次输入密码不一致！");
+					}
+				})
+				
+				$(".test").blur(function(){
+					test = $(this).val();
+					if(test != 'CBF5' ){
+						alert("请输入正确的验证码！");
+					}
+				})
+				
+				$(".photo_test").blur(function(){
+					photo_test = $(".photo_test").val();
+					if(photo_test!="123456"){
+						alert("手机验证码不正确！")
+					}
+					
+				})
+				
+				$(".btn").click(function(){
+					code(60);
+				})
+				
+				function code(n){
+					
+					$(".btn").html(n+"秒");
+			
+					time1 = setInterval(function(){
+						n--;
+						$(".btn").html(n+"秒");
+						if(n==0){
+							clearInterval(time1);
+							$(".btn").html("重新发送");
+						}
+					},1000)
+				
+				}
+				
+				$(".submit").click(function(){
+					
+					if( photo=="" || photo==null ){
+						alert("手机号码不能为空！");
+						return false;
+					}else if(password1==""||password1==null){
+						alert("密码不能为空！");
+						return false;
+					}else if(password2 != password1){
+						alert("两次输入密码不一致！");
+						return false;
+					}else if(test==""||test==null){
+						alert("请输入验证码！");
+						return false;
+					}else if(photo_test==""||photo_test==null){
+						alert("请输入手机验证码！");
+						return false;
+					}else{
+						$("#form").submit();
+					}
+				})
+				
+				
+				
+			})
+				
+		</script>
+		
+		
+	</body>
+</html>

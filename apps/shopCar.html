@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页</title>
+		<link rel="stylesheet" type="text/css" href="../css/pc/shopCar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pc/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pc/top_bottom.css"/>
+		<script src="../js/pc/jquery-1.11.1.min.js"></script>
+		<script src="../js/pc/shopCar.js"></script>
+		<style>
+			/*导航*/
+				.navUl .login a{
+					color: #000;
+				}
+				
+				/*背景色*/
+				body{
+					background: #F7F7F7;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<!--                 头部开始 			 -->
+			<div class="topNav">
+				<div class="topNavBody">
+					<ul class="navUl">
+						<li class="address">
+							<select name="" id="province">
+								 <!-- <option value="">海南</option>  -->
+							</select>
+							<p class="plus"></p>
+							<select name="" id="city">
+								<!-- <option value="">三亚</option> -->
+							</select>
+						</li>
+						<li class="login">
+							<p>
+								<span>HELLO,欢迎光临! 亲&nbsp;</span>
+								<span>[ &nbsp;<a href="signin.html" id="login">请登录</a>&nbsp; ]</span>
+								<span>&nbsp;<a href="register.html" id="signup">免费注册</a></span>
+							</p>
+							<p>
+								<span class="upright"></span>
+								<a href="collect.html">
+									<span>我的收藏</span>
+								</a>
+								
+							</p>
+							<p class="dongdong">
+								<span class="upright"></span>
+								<a href="go.html" >
+									<span>我的东东</span>
+								</a>
+								
+								<span class="triangle"></span>
+								<b class="mine">
+									<a href="jifen.html" >我的积分</a>
+									<a href="my_order.html" >我的订购</a>
+								</b>
+							</p>
+							<p>
+								<span class="upright"></span>
+								<a href="help_integral.html">
+									<span>帮助中心</span>
+								</a>
+								<span class="triangle"></span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="logo_mark">
+					<div id="logo">
+						<img src="../images/web/index/logo.png"/>
+					</div>
+					<ol class="mark_second">
+						<li>
+							<input type="text" id="text_input" placeholder="请输入您的关键词..."/>
+							<input type="button" value="搜索" id="submit"/>
+						</li>
+						<!--<li class="shop_cart">
+							<a href="shopCar.html">
+								<p class="shop_text">
+									我的购物车
+									<span>0</span>
+								</p>
+							</a>							
+						</li>-->
+						<!--<li class="hid_shop" >
+							<ul id="hid_content">
+								<li class="hidFir">满99元包邮</li>
+								<li class="hid_add">
+									<dl class="shopping">
+										<dt>
+											<img src="../images/web/index/glass.png"/>
+										</dt>
+										<dd>
+											<p>买2送镜盒艾丽可小布丁大小直径...</p>
+											<p class="price"><span>￥84.00</span>元/盒</p>
+											<a href="###" class="delete"><span>删除</span></a>
+										</dd>
+									</dl>
+								</li>
+								<li class="hid_add">
+									<dl class="shopping">
+										<dt>
+											<img src="../images/web/index/glass.png"/>
+										</dt>
+										<dd>
+											<p>买2送镜盒艾丽可小布丁大小直径...</p>
+											<p class="price"><span>￥84.00</span>元/盒</p>
+											<a href="###" class="delete"><span>删除</span></a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div id="hid_bottom">
+								<ol class="hid_bottom_body">
+									<li class="goods">
+										<p>共有<span id="number">2</span>件商品</p>
+										<p>总重<span id="weight">1.6kg</span>(含包装)</p>
+									</li>
+									<li>
+										<p>共计：￥<span id="total_price">168.00</span>元</p>
+										<p id="pay"><a href="###">去购物车结算</a></p>
+									</li>
+								</ol>
+							</div>
+						</li>-->
+					</ol>
+				</div>
+				<div class="classifyFa">
+					<ul class="classify"> 
+						<li class="good_whole">
+							<p><a href="###">全部商品分类</a></p>
+						</li>
+						<li><a href="index.html">首 &nbsp;页</a></li>
+						<!--<li><a href="">厨师联盟</a></li>-->
+						<li><a href="details.html">团购商品</a></li>
+						<li><a href="news.html">新闻资讯</a></li>
+						<li class="business">
+							<a href="league.html">招商</a>
+							<p class="hot"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--                 头部结束                 -->
+			<div id="body">
+				<div class="bodyCon">
+					<div class="search">
+						<input type="text" class="serchInput" placeholder="宝贝搜索"/>
+						<button class="searchButton"></button>
+					</div>
+					<div class="Classify">
+						<a href="###">
+							<div id="allGoods" class="twoGoods active">
+								<p class="fontSize12">
+									<span>全部商品</span>
+									<span id="allGoods_number">（108）</span>
+								</p>
+							</div>
+						</a>
+						<a href="###">
+							<div id="lowPriGoods" class="twoGoods">
+								<p class="fontSize12">
+									<span>降价商品</span>
+									<span id="lowPriGoods_number">（6）</span>
+								</p>
+							</div>
+						</a>						
+						<div id="classBorder"></div>
+					</div>
+				</div>
+				<div id="getallGoods">
+					<div class="infos fontSize12">
+						<div class="checkboxAll checkBoxQuan">
+					  		<input type="checkbox" value="1" id="checkboxAllInput" name="" />
+						  	<label for="checkboxAllInput"></label>
+						  	<b>全选</b>
+					  	</div>
+						<span>商品信息</span>
+						<span>产品编号</span>
+						<span>单价（元）</span>
+						<span>数量</span>
+						<span>金额（元）</span>
+						<span>操作</span>
+					</div>
+					<ul class="buyGoodes">
+						<li class="goodName">
+							<div class="checkboxAll checkbox1 checkBox">
+						  		<input type="checkbox" value="1" id="checkboxAllInput1" name="" />
+							  	<label for="checkboxAllInput1"></label>
+						  	</div>
+						  	<div class="goodsDes">
+						  		<p class="good_pic">
+						  			<a href="">
+						  				<img src="../images/web/shopcar/glass.png"/>
+						  			</a>						  			
+						  		</p>
+						  		<p class="fontSize12">买2送镜盒艾丽可小布丁大小直径..</p>
+						  		<p class="fontSize12">
+						  			<span>月销</span>
+						  			<span class="fontGreen">116</span>
+						  			<span>件</span>
+						  		</p>
+						  	</div>
+						</li>
+						<li class="threeInfos fontSize12">
+							<div class="infoOne  fontGreen">47.00</div>
+							<div class="infoTwo">
+								<p class="leftMinus fontGray1">-</p>
+								<p class="middleInput">
+									<input type="text" value="1" class="productNum">
+								</p>
+								<p class="rightPlus">+</p>
+							</div>
+							<div class="infoThree  fontGreen">47.00</div>
+						</li>
+						<li class="operates fontSize12">
+							<p class="move">移入收藏夹</p>
+							<p class="Delete">删除</p>
+							<p class="similar"><a href="###" class="fontSize12">相似宝贝</a></p>
+						</li>
+					</ul>
+					<ul class="buyGoodes">
+						<li class="goodName">
+							<div class="checkboxAll checkbox1 checkBox">
+						  		<input type="checkbox" value="1" id="checkboxAllInput3" name="" />
+							  	<label for="checkboxAllInput3"></label>
+						  	</div>
+						  	<div class="goodsDes">
+						  		<p class="good_pic">
+						  			<a href="">
+						  				<img src="../images/web/shopcar/glass.png"/>
+						  			</a>						  			
+						  		</p>
+						  		<p class="fontSize12">买2送镜盒艾丽可小布丁大小直径..</p>
+						  		<p class="fontSize12">
+						  			<span>月销</span>
+						  			<span class="fontGreen">116</span>
+						  			<span>件</span>
+						  		</p>
+						  	</div>
+						</li>
+						<li class="threeInfos fontSize12">
+							<div class="infoOne  fontGreen">47.00</div>
+							<div class="infoTwo">
+								<p class="leftMinus fontGray1">-</p>
+								<p class="middleInput">
+									<input type="text" value="1" class="productNum">
+								</p>
+								<p class="rightPlus">+</p>
+							</div>
+							<div class="infoThree  fontGreen">47.00</div>
+						</li>
+						<li class="operates fontSize12">
+							<p class="move">移入收藏夹</p>
+							<p class="Delete">删除</p>
+							<p class="similar"><a href="###" class="fontSize12">相似宝贝</a></p>
+						</li>
+					</ul>
+					<div class="allOperate">
+						<div class="allOperate1 fontSize12">
+							<div class="checkboxAll checkBoxQuan">
+						  		<input type="checkbox" value="1" id="checkboxAllInput2" name="" />
+							  	<label for="checkboxAllInput2"></label>
+							  	<b>全选</b>
+						  	</div>
+						  	<p id="deleteAll">删除</p>
+						  	<a href="###">移入收藏夹</a>
+						</div>
+						<div class="allOperate2">
+							<p class="fontSize12">
+								<span>已选商品</span>
+								<span class="fontGreen" id="goodNumber">0</span>
+								<span>件</span>
+							</p>
+							<p class="fontSize12 MarginP">
+								<span>合计（不含运费）：</span>
+								<span class="fontGreen" id="jiesuan">￥0.00</span>
+							</p>
+							<p class="fontSize16">
+								<a href="###">结算</a>
+							</p>
+						</div>
+					</div>
+				</div>								
+				<div class="advert">
+					<a href="###">
+						<img src="../images/web/shopCar/advert.png" alt="">
+					</a>					
+				</div>
+				<div class="bottom">
+					<div class="friendLink">
+						<p>
+							<span class="fontSize18 fontGray">友情链接 |</span>
+							<span>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+								<a href="" class="fontGray fontSize14">海南新闻网</a>
+							</span>
+						</p>
+					</div>
+					<div class="peculiarities">
+						<ol class="peculiarity peculiarity1">
+							<li class="peculiarity_logo peculiarity1_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">产地直采</p>
+								<p class="fontSize12">DIRECT MINING AREA</p>
+								<p class="fontSize12">价格优惠 质量保证</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity2">
+							<li class="peculiarity_logo peculiarity2_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">品种齐全</p>
+								<p class="fontSize12">COMPLETE VARIETIES</p>
+								<p class="fontSize12">您想要的 我们都有</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity3">
+							<li class="peculiarity_logo peculiarity3_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">冷链配送</p>
+								<p class="fontSize12 fontSmallSize timeLimEng">COLD CHAIN DISTRIBUTION</p>
+								<p class="fontSize12">全程冷链 保持新鲜</p>
+							</li>
+						</ol>
+						<ol class="peculiarity peculiarity4">
+							<li class="peculiarity_logo peculiarity4_logo"></li>
+							<li class="color666">
+								<p class="fontSize30">品质保证</p>
+								<p class="fontSize12">QUALITY ASSURANCE</p>
+								<p class="fontSize12">精选产品 质量保证</p>
+							</li>
+						</ol>
+					</div>
+					<div class="bottomContent">
+						<ul>
+							<li class="bottomContent1">
+								<img src="../images/web/index/logo2.png" id="logo2"/>
+								<div class="fontGray customService fontSize12">
+									<p>
+										<span class="circlrPoint"></span>
+										<span>客服电话 400-606-5500</span>
+									</p>
+									<p>
+										<span class="circlrPoint"></span>
+										<span>客服时间 0:00-24:00</span>
+									</p>
+									<p>
+										<span class="circlrPoint"></span>
+										<span>在线客服 9:00-24:00</span>
+									</p>
+								</div>
+								<div class="copyRight fontColor72 fontSize14">
+									Copyright &copy; 2004-2016 xxxx 版权所有
+								</div>
+							</li>
+							<li class="bottomContent2 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">配送服务</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分制度</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>会员介绍</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>购物流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>会员政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分政策</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent3 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">购物指南</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>全程冷链</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送时间</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送范围</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>配送收费标准</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent4 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">支付方式</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>货到付款</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>在线支付</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>其他支付方式</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>优惠券使用</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>积分使用</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent5 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">售后服务</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>验货与拒收政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退换货政策</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退换货流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>退款流程</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>发票制度</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent6 bottom_content">
+								<div class="fontColor72 fontSize18 marginBottom">商家中心</div>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>商家规则</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>食品流通许可证</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>营业执照</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>用户协议</span>
+									</a>
+								</p>
+								<p>
+									<a href="" class="fontGray fontSize12">
+										<span class="circlrPoint"></span>
+										<span>用户须知</span>
+									</a>
+								</p>
+							</li>
+							<li class="bottomContent7">
+								<p class="fontColor72 fontSize14">官方微信二维码</p>
+								<a href="">
+									<img src="../images/web/index/erweima.png" class="erweima"/>
+								</a>  
+								<p class="fontColorye fontSize14">
+									[ 用微信扫一扫关注我们 ]
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+		</div>		
+	</body>
+</html>
